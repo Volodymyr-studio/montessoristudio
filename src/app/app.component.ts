@@ -12,10 +12,10 @@ import { MmBodyComponent } from './mm-body/mm-body.component';
 })
 export class AppComponent {
   constructor(private titleService: Title, private metaService: Meta) {
-    this.titleService.setTitle('Постільна білизна та текстиль для дому | Dyvo Ranok');
+    this.titleService.setTitle('Світ у кожній дитині | Montessori studio');
     this.metaService.updateTag({
       name: 'description',
-      content: 'Купити постільну білизну, скатертини, рушники та інший текстиль в інтернет-магазині Dyvo Ranok. Екологічні матеріали. Індивідуальні замовлення. Українське виробництво.'
+      content: 'Висококваліфіковані та ліцензійовані фахівці'
     });
   }
 }
