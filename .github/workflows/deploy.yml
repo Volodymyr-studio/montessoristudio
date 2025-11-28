@@ -29,10 +29,6 @@ jobs:
         run: |
           npm run build -- --configuration production --output-path=dist
 
-#      - name: Add CNAME file
-#        run: |
-#          echo "www.dyvo-ranok.com.ua" > dist/browser/CNAME
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
