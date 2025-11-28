@@ -8,4 +8,23 @@ import { environment } from './../environments/environment';
 })
 export class BackendService {
 
+  private apiUrl = '';
+
+  sendOrderApplianceDromForm(
+    token: string,
+    orderFormComponent: any
+  ): Observable<any> {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      token: token,
+    });
+
+    return this.http.post<any>(
+      this.apiUrl,
+      JSON.stringify(orderFormComponent),
+      { headers }
+    );
+  }
+
+  constructor(private http: HttpClient) { }
 }
