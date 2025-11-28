@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Angular App
         run: |
-          npm run build -- --configuration production
+          npm run build -- --configuration production --base-href /montessoristudio/ --output-path=dist
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
