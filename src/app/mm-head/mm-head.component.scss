@@ -2,3 +2,64 @@
 {
     opacity: 0.9;
 }
+
+.montessori-banner {
+  width: 100%;
+  background: #170859;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.2rem 5vw;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.montessori-main {
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: 700;                 /* bold like the image */
+  letter-spacing: 0.55em;           /* spaced-out look */
+}
+
+.montessori-sub {
+  font-size: clamp(0.9rem, 3vw, 4rem);
+  font-weight: 700;                 /* light tone matching image */
+  text-transform: lowercase;
+  margin-left: 3.8rem;
+  opacity: 0.85;                    /* softer, like your banner */
+}
+.hero-banner {
+  width: 100%;
+  height: 50vh; // adjust: 60–70vh for bigger
+  background: url('/banner.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // VERY light white tint, clean & modern
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .hero-content {
+    position: relative; // stay above overlay
+    text-align: center;
+    color: #333;
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      margin: 0.5rem 0 0;
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: #555;
+    }
+  }
+}
