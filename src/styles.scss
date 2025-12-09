@@ -24,18 +24,6 @@ $font-family-base: "Shantell Sans", "Helvetica Neue", cursive;
 // Import the main Bootstrap styles
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.video-banner {
-  position: relative;
-  width: 100%;
-  height: 90vh;
-  overflow: hidden;
-}
-
-.video-banner video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .overlay {
   position: absolute;
