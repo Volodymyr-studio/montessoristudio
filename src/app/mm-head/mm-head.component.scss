@@ -1,6 +1,6 @@
 .montessori-banner {
   width: 100%;
-  background: #170859;
+  background: #5f3aff;
   color: #ffffff;
   display: flex;
   justify-content: flex-start;
@@ -11,18 +11,22 @@
 }
 
 .montessori-main {
-  font-size: clamp(1.8rem, 6vw, 4.5rem);     /* smooth, balanced scale */
+  font-size: clamp(1.8rem, 6vw, 4.5rem);
+  /* smooth, balanced scale */
   font-weight: 700;
-  letter-spacing: clamp(0.25em, 1vw, 0.55em); /* reduces overflow on mobile */
+  letter-spacing: clamp(0.25em, 1vw, 0.55em);
+  /* reduces overflow on mobile */
   text-transform: uppercase;
   line-height: 1.1;
 }
 
 .montessori-sub {
-  font-size: clamp(1rem, 2.8vw, 2.5rem);     /* softer and proportional */
+  font-size: clamp(1.15rem, 2.8vw, 2.5rem);
+  /* softer and proportional */
   font-weight: 600;
   text-transform: lowercase;
-  margin-left: clamp(1.5rem, 3vw, 4rem);     /* adjusts spacing dynamically */
+  margin-left: clamp(1.5rem, 3vw, 4rem);
+  /* adjusts spacing dynamically */
   opacity: 0.85;
 }
 
