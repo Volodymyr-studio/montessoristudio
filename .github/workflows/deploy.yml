@@ -27,7 +27,11 @@ jobs:
 
       - name: Build Angular App
         run: |
-          npm run build -- --configuration production --base-href /montessoristudio/ --output-path=dist
+          npm run build -- --configuration production --output-path=dist
+
+      - name: Add CNAME file
+        run: |
+          echo "www.montessoristudio.com.ua" > dist/browser/CNAME
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
